@@ -102,7 +102,7 @@ else:
                 full_prompt = f"{system_instruction}\n\nこれまでの会議の流れ:\n{chat_history_text}\n\n直前の発言者({user_name})の意見を踏まえて、AI司会者としてグループに返答・進行してください。"
 
                 response = client.models.generate_content(
-                    model='gemini-2.5-flash',
+                    model='gemini-3.8-flash',
                     contents=full_prompt
                 )
                 
